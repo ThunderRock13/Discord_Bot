@@ -16,7 +16,8 @@
   }
  "scripts": {
   "start": "node bot.js",
-  "build": "webpack"
+  "build": "ng build",
+  "heroku-postbuild": "ng build --prod" // this will be run on Heroku
 }
 }
 
