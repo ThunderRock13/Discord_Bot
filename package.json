@@ -6,6 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
 }
+  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
   "scripts": {
     "dev": "next dev",
     "sitemap": "node bot.js",
@@ -15,11 +23,5 @@
     "pretest": "npm run lint",
     "lint": "prettier --check pages components pageClasses __tests__"
   }
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^8.2.0"
-  }
 }
+
