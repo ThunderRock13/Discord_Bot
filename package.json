@@ -7,10 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
 }
   "scripts": {
-    "dev": "node bot.js",
+    "dev": "next dev",
+    "sitemap": "node bot.js",
+    "start": "next start -p $PORT",
     "build": "next build",
-    "postinstall": "npm run build",
-    "start": "NODE_ENV=production node bot.js"
+    "test": "jest",
+    "pretest": "npm run lint",
+    "lint": "prettier --check pages components pageClasses __tests__"
   }
   },
   "keywords": [],
