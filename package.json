@@ -14,14 +14,9 @@
   "dependencies": {
     "dotenv": "^8.2.0"
   }
-  "scripts": {
-    "dev": "next dev",
-    "sitemap": "node bot.js",
-    "start": "next start -p $PORT",
-    "build": "next build",
-    "test": "jest",
-    "pretest": "npm run lint",
-    "lint": "prettier --check pages components pageClasses __tests__"
-  }
+ "scripts": {
+  "start": "node bot.js",
+  "build": "webpack"
+}
 }
 
